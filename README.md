@@ -6,7 +6,7 @@ Monitoring TIBCO Application
 --Secure the prometheus Infrastructure via Nginx<br>
 --Monitor TIBCO BusinessWorks Container Edition Application<br>
 --Monitor TIBCO AMX BPM using prometheus.<br>
-   <Monitor TIBCO AMXBPM application><br>
+   Monitor TIBCO AMXBPM application<br>
   
 
 
