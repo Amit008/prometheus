@@ -1,0 +1,10 @@
+from centos
+
+RUN yum install -y tar;\
+mkdir -p /tmp/prometheus-alertmanager;\
+curl http://192.168.1.102:8070/alertmanager-0.15.1.linux-amd64.tar.gz -o /tmp/alertmanager-0.15.1.linux-amd64.tar.gz;\
+tar -xvf /tmp/alertmanager-0.15.1.linux-amd64.tar.gz -C /tmp/prometheus-alertmanager;\
+cp /tmp/prometheus-alertmanager/alertmanager-0.15.1.linux-amd64/amtool /bin/amtool;\
+cp tmp/prometheus-alertmanager/alertmanager-0.15.1.linux-amd64/alertmanager /bin/alertmanager;\
+mkdir -p /etc/prometheus-alertmanager;\
+mv tmp/prometheus-alertmanager/alertmanager-0.15.1.linux-amd64/alertmanager.yml /etc/prometheus-alermanager/
